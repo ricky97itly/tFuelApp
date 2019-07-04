@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3X-Tq-KTM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="hJm-na-hoZ">
+            <objects>
+                <viewController id="E3X-Tq-KTM" customClass="HomeController" customModule="tFuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWw-wP-iaj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFZ-Iz-Tmc">
+                                <rect key="frame" x="0.0" y="74" width="414" height="739"/>
+                                <connections>
+                                    <outlet property="delegate" destination="E3X-Tq-KTM" id="H2u-ij-bFF"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-IN-s60">
+                                <rect key="frame" x="356" y="753" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Isy-Jj-onz"/>
+                                    <constraint firstAttribute="height" constant="30" id="wDr-uD-4Lw"/>
+                                </constraints>
+                                <state key="normal" title="hey"/>
+                                <connections>
+                                    <action selector="centerMap:" destination="E3X-Tq-KTM" eventType="touchUpInside" id="TEe-VW-yXf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKb-z9-B1E">
+                                <rect key="frame" x="20" y="33" width="374" height="40"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GvX-TF-j1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dKb-z9-B1E" firstAttribute="leading" secondItem="aWw-wP-iaj" secondAttribute="leadingMargin" id="00U-41-OVS"/>
+                            <constraint firstItem="RiN-vy-Z4V" firstAttribute="trailing" secondItem="vAV-IN-s60" secondAttribute="trailing" constant="28" id="8sC-Eq-86d"/>
+                            <constraint firstItem="vAV-IN-s60" firstAttribute="leading" secondItem="RiN-vy-Z4V" secondAttribute="leading" constant="356" id="JWF-1Q-sRI"/>
+                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="leading" secondItem="RiN-vy-Z4V" secondAttribute="leading" id="cQJ-mn-EFd"/>
+                            <constraint firstItem="dKb-z9-B1E" firstAttribute="trailing" secondItem="aWw-wP-iaj" secondAttribute="trailingMargin" id="gYs-eD-ps2"/>
+                            <constraint firstItem="RiN-vy-Z4V" firstAttribute="bottom" secondItem="vAV-IN-s60" secondAttribute="bottom" constant="30" id="hla-fz-OIW"/>
+                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="bottom" secondItem="RiN-vy-Z4V" secondAttribute="bottom" id="pfF-6q-cyJ"/>
+                            <constraint firstItem="dKb-z9-B1E" firstAttribute="top" secondItem="aWw-wP-iaj" secondAttribute="topMargin" constant="-11" id="qb3-SX-6wB"/>
+                            <constraint firstItem="dKb-z9-B1E" firstAttribute="centerX" secondItem="FFZ-Iz-Tmc" secondAttribute="centerX" id="rWn-Rs-Juh"/>
+                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="top" secondItem="dKb-z9-B1E" secondAttribute="bottom" constant="1" id="xo9-rK-Dnc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RiN-vy-Z4V"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="X6t-RG-2l8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="dKb-z9-B1E" id="07B-Wh-cWM"/>
+                        <outlet property="map" destination="FFZ-Iz-Tmc" id="p8l-mN-SSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-dD-Iqz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+    </scenes>
+</document>
