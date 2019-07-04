@@ -1,0 +1,6 @@
+framework module Pods_tFuel {
+  umbrella header "Pods-tFuel-umbrella.h"
+
+  export *
+  module * { export * }
+}
