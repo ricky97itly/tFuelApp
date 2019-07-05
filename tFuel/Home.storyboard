@@ -21,18 +21,6 @@
                                     <outlet property="delegate" destination="E3X-Tq-KTM" id="H2u-ij-bFF"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-IN-s60">
-                                <rect key="frame" x="306" y="736" width="80" height="47"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="5fh-6p-ZhC"/>
-                                    <constraint firstAttribute="width" constant="80" id="Kma-N7-UGn"/>
-                                    <constraint firstAttribute="width" secondItem="vAV-IN-s60" secondAttribute="height" multiplier="80:47" id="ag3-0a-REr"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="centerMap:" destination="E3X-Tq-KTM" eventType="touchUpInside" id="TEe-VW-yXf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKb-z9-B1E">
                                 <rect key="frame" x="20" y="33" width="374" height="40"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,18 +30,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-IN-s60">
+                                <rect key="frame" x="364" y="747" width="36" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="position"/>
+                                <connections>
+                                    <action selector="centerMap:" destination="E3X-Tq-KTM" eventType="touchUpInside" id="TEe-VW-yXf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dKb-z9-B1E" firstAttribute="leading" secondItem="aWw-wP-iaj" secondAttribute="leadingMargin" id="00U-41-OVS"/>
-                            <constraint firstItem="RiN-vy-Z4V" firstAttribute="trailing" secondItem="vAV-IN-s60" secondAttribute="trailing" constant="28" id="YSb-36-qvL"/>
                             <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="leading" secondItem="RiN-vy-Z4V" secondAttribute="leading" id="cQJ-mn-EFd"/>
                             <constraint firstItem="dKb-z9-B1E" firstAttribute="trailing" secondItem="aWw-wP-iaj" secondAttribute="trailingMargin" id="gYs-eD-ps2"/>
                             <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="bottom" secondItem="RiN-vy-Z4V" secondAttribute="bottom" id="pfF-6q-cyJ"/>
                             <constraint firstItem="dKb-z9-B1E" firstAttribute="top" secondItem="aWw-wP-iaj" secondAttribute="topMargin" constant="-11" id="qb3-SX-6wB"/>
                             <constraint firstItem="dKb-z9-B1E" firstAttribute="centerX" secondItem="FFZ-Iz-Tmc" secondAttribute="centerX" id="rWn-Rs-Juh"/>
-                            <constraint firstItem="vAV-IN-s60" firstAttribute="leading" secondItem="RiN-vy-Z4V" secondAttribute="leading" constant="306" id="rna-yN-jO1"/>
-                            <constraint firstItem="RiN-vy-Z4V" firstAttribute="bottom" secondItem="vAV-IN-s60" secondAttribute="bottom" constant="30" id="xS0-YX-9Y7"/>
                             <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="top" secondItem="dKb-z9-B1E" secondAttribute="bottom" constant="1" id="xo9-rK-Dnc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RiN-vy-Z4V"/>
@@ -72,5 +65,6 @@
     </scenes>
     <resources>
         <image name="home" width="36" height="39"/>
+        <image name="position" width="53.5" height="53"/>
     </resources>
 </document>
