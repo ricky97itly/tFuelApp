@@ -7,6 +7,7 @@ target 'tFuel' do
 
   # Pods for tFuel
 pod 'GradientButtonSwift'
+pod 'IQKeyboardManagerSwift'
 
   target 'tFuelTests' do
     inherit! :search_paths

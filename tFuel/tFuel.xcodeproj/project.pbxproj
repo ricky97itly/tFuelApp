@@ -130,19 +130,14 @@
 		21283DF922CE3EF10000ABE8 /* tFuel */ = {
 			isa = PBXGroup;
 			children = (
+				21283E3A22CF80550000ABE8 /* Storyboards */,
 				21283DFA22CE3EF10000ABE8 /* AppDelegate.swift */,
 				21283DFC22CE3EF10000ABE8 /* SceneDelegate.swift */,
 				21283E0022CE3EF10000ABE8 /* SecondViewController.swift */,
-				21283E0222CE3EF10000ABE8 /* Main.storyboard */,
-				21283E3222CE54830000ABE8 /* Settings.storyboard */,
-				21283E3022CE41C10000ABE8 /* Calculate.storyboard */,
 				21283E3822CE9C230000ABE8 /* CalculateViewController.swift */,
-				21283E2E22CE40850000ABE8 /* Search.storyboard */,
-				21283E2C22CE3F260000ABE8 /* Home.storyboard */,
 				21283E3622CE5BB60000ABE8 /* AlertStruct.swift */,
 				21283E3422CE56C50000ABE8 /* HomeController.swift */,
 				21283E0522CE3EF20000ABE8 /* Assets.xcassets */,
-				21283E0722CE3EF20000ABE8 /* LaunchScreen.storyboard */,
 				21283E0A22CE3EF20000ABE8 /* Info.plist */,
 			);
 			path = tFuel;
@@ -164,6 +159,20 @@
 				21283E2022CE3EF20000ABE8 /* Info.plist */,
 			);
 			path = tFuelUITests;
+			sourceTree = "<group>";
+		};
+		21283E3A22CF80550000ABE8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				21283E0722CE3EF20000ABE8 /* LaunchScreen.storyboard */,
+				21283E0222CE3EF10000ABE8 /* Main.storyboard */,
+				21283E2C22CE3F260000ABE8 /* Home.storyboard */,
+				21283E2E22CE40850000ABE8 /* Search.storyboard */,
+				21283E3022CE41C10000ABE8 /* Calculate.storyboard */,
+				21283E3222CE54830000ABE8 /* Settings.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4D35D2573BCEC783E6490848 /* Pods */ = {

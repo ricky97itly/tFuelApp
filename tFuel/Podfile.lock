@@ -1,16 +1,20 @@
 PODS:
   - GradientButtonSwift (1.0.2)
+  - IQKeyboardManagerSwift (6.4.0)
 
 DEPENDENCIES:
   - GradientButtonSwift
+  - IQKeyboardManagerSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GradientButtonSwift
+    - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
   GradientButtonSwift: b2231f7ccb0d2c817409ca20634f7a430876f7d5
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
 
-PODFILE CHECKSUM: 011f9f85f1800611b4d1cff788411ef5eb82f606
+PODFILE CHECKSUM: a630093fda6c1b1911f9ab97555a15bd3e136cf4
 
 COCOAPODS: 1.7.3
