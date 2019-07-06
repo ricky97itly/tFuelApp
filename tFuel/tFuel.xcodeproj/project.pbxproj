@@ -10,7 +10,6 @@
 		174AFF55E6A370C128B0F3F9 /* Pods_tFuelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5179C0FA67F0756667E7A8E4 /* Pods_tFuelTests.framework */; };
 		21283DFB22CE3EF10000ABE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283DFA22CE3EF10000ABE8 /* AppDelegate.swift */; };
 		21283DFD22CE3EF10000ABE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283DFC22CE3EF10000ABE8 /* SceneDelegate.swift */; };
-		21283E0122CE3EF10000ABE8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E0022CE3EF10000ABE8 /* SecondViewController.swift */; };
 		21283E0422CE3EF10000ABE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E0222CE3EF10000ABE8 /* Main.storyboard */; };
 		21283E0622CE3EF20000ABE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21283E0522CE3EF20000ABE8 /* Assets.xcassets */; };
 		21283E0922CE3EF20000ABE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E0722CE3EF20000ABE8 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,12 @@
 		21283E3522CE56C50000ABE8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3422CE56C50000ABE8 /* HomeController.swift */; };
 		21283E3722CE5BB60000ABE8 /* AlertStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3622CE5BB60000ABE8 /* AlertStruct.swift */; };
 		21283E3922CE9C230000ABE8 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3822CE9C230000ABE8 /* CalculateViewController.swift */; };
+		21283E3C22D095D50000ABE8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3B22D095D40000ABE8 /* SearchViewController.swift */; };
+		21283E3E22D096140000ABE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3D22D096140000ABE8 /* SettingsViewController.swift */; };
+		21283E4422D0972A0000ABE8 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E4322D0972A0000ABE8 /* Register.storyboard */; };
+		21283E4622D097580000ABE8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E4522D097580000ABE8 /* Login.storyboard */; };
+		21283E5222D099540000ABE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E5122D099540000ABE8 /* LoginViewController.swift */; };
+		21283E5422D099710000ABE8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E5322D099710000ABE8 /* RegisterViewController.swift */; };
 		500AD900CB81B992C1F907C9 /* Pods_tFuelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EE1EBD52A29F7A215FBE4E /* Pods_tFuelUITests.framework */; };
 		AB7699EDEA570E92F00F8F9F /* Pods_tFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +54,6 @@
 		21283DF722CE3EF10000ABE8 /* tFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21283DFA22CE3EF10000ABE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21283DFC22CE3EF10000ABE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21283E0022CE3EF10000ABE8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		21283E0322CE3EF10000ABE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21283E0522CE3EF20000ABE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21283E0822CE3EF20000ABE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +71,12 @@
 		21283E3422CE56C50000ABE8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		21283E3622CE5BB60000ABE8 /* AlertStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertStruct.swift; sourceTree = "<group>"; };
 		21283E3822CE9C230000ABE8 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		21283E3B22D095D40000ABE8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		21283E3D22D096140000ABE8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		21283E4322D0972A0000ABE8 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		21283E4522D097580000ABE8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		21283E5122D099540000ABE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/LoginViewController.swift; sourceTree = "<absolute>"; };
+		21283E5322D099710000ABE8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = /Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/RegisterViewController.swift; sourceTree = "<absolute>"; };
 		327B2DD4464731FBBD5042CC /* Pods-tFuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuel.debug.xcconfig"; path = "Target Support Files/Pods-tFuel/Pods-tFuel.debug.xcconfig"; sourceTree = "<group>"; };
 		46B6D9F202BF1192DD66EC3A /* Pods-tFuelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelTests.debug.xcconfig"; path = "Target Support Files/Pods-tFuelTests/Pods-tFuelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5179C0FA67F0756667E7A8E4 /* Pods_tFuelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tFuelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +142,11 @@
 			children = (
 				21283E3A22CF80550000ABE8 /* Storyboards */,
 				21283DFA22CE3EF10000ABE8 /* AppDelegate.swift */,
+				21283E3D22D096140000ABE8 /* SettingsViewController.swift */,
+				21283E3B22D095D40000ABE8 /* SearchViewController.swift */,
 				21283DFC22CE3EF10000ABE8 /* SceneDelegate.swift */,
-				21283E0022CE3EF10000ABE8 /* SecondViewController.swift */,
+				21283E5122D099540000ABE8 /* LoginViewController.swift */,
+				21283E5322D099710000ABE8 /* RegisterViewController.swift */,
 				21283E3822CE9C230000ABE8 /* CalculateViewController.swift */,
 				21283E3622CE5BB60000ABE8 /* AlertStruct.swift */,
 				21283E3422CE56C50000ABE8 /* HomeController.swift */,
@@ -170,6 +183,8 @@
 				21283E2E22CE40850000ABE8 /* Search.storyboard */,
 				21283E3022CE41C10000ABE8 /* Calculate.storyboard */,
 				21283E3222CE54830000ABE8 /* Settings.storyboard */,
+				21283E4322D0972A0000ABE8 /* Register.storyboard */,
+				21283E4522D097580000ABE8 /* Login.storyboard */,
 			);
 			name = Storyboards;
 			path = ..;
@@ -313,6 +328,8 @@
 				21283E2D22CE3F260000ABE8 /* Home.storyboard in Resources */,
 				21283E2F22CE40850000ABE8 /* Search.storyboard in Resources */,
 				21283E3322CE54830000ABE8 /* Settings.storyboard in Resources */,
+				21283E4422D0972A0000ABE8 /* Register.storyboard in Resources */,
+				21283E4622D097580000ABE8 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +440,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21283E5422D099710000ABE8 /* RegisterViewController.swift in Sources */,
 				21283E3522CE56C50000ABE8 /* HomeController.swift in Sources */,
-				21283E0122CE3EF10000ABE8 /* SecondViewController.swift in Sources */,
+				21283E3C22D095D50000ABE8 /* SearchViewController.swift in Sources */,
+				21283E3E22D096140000ABE8 /* SettingsViewController.swift in Sources */,
 				21283E3722CE5BB60000ABE8 /* AlertStruct.swift in Sources */,
+				21283E5222D099540000ABE8 /* LoginViewController.swift in Sources */,
 				21283DFB22CE3EF10000ABE8 /* AppDelegate.swift in Sources */,
 				21283DFD22CE3EF10000ABE8 /* SceneDelegate.swift in Sources */,
 				21283E3922CE9C230000ABE8 /* CalculateViewController.swift in Sources */,
