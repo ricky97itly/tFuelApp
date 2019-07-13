@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 class HomeController: UIViewController {
-    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
     let annotation = MKPointAnnotation()
     let locationManager = CLLocationManager()
@@ -22,20 +22,42 @@ class HomeController: UIViewController {
         override func viewDidLoad() {
         super.viewDidLoad()
             checkLocationServices()
+            queryFuelStations()
     }
+    
+//    Function that handles the query and serves the annotations to the map
+    func queryFuelStations() {
+        let request = MKLocalSearch.Request()
+//        This function uses natural language querying... Not sure if this can be improved. Set a low prio issue
+        request.naturalLanguageQuery = "Petrol Station"
+        request.region = mapView.region
+        let search = MKLocalSearch(request: request)
+        search.start { (response, err) in
+            guard let response = response else { return }
+            for mapItem in response.mapItems {
+//                Creates a new annotation and uses the phone number as description, just a temporary change
+                let annotation = MKPointAnnotation()
+                annotation.title = mapItem.name
+                annotation.coordinate = mapItem.placemark.coordinate
+                annotation.subtitle = mapItem.phoneNumber
+                self.mapView.addAnnotation(annotation)
+            }
+        }
+    }
+    
     //   Zoom on user
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-            map.setRegion(region, animated: true)
+            mapView.setRegion(region, animated: true)
         }
     }
     
     func startTackingUserLocation() {
-        map.showsUserLocation = true
+        mapView.showsUserLocation = true
         centerViewOnUserLocation()
         locationManager.startUpdatingLocation()
-        previousLocation = getCenterLocation(for: map)
+        previousLocation = getCenterLocation(for: mapView)
     }
     
     func getCenterLocation(for mapView: MKMapView) -> CLLocation {
@@ -47,7 +69,7 @@ class HomeController: UIViewController {
     
     //    On btn click center user position
     @IBAction func centerMap(_ sender: UIButton) {
-    map.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
+    mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
     }
     
     

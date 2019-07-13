@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/LoginViewController.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/RegisterViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:tFuel.xcodeproj">
    </FileRef>
    <FileRef

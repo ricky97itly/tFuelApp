@@ -26,9 +26,10 @@
 		21283E3E22D096140000ABE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E3D22D096140000ABE8 /* SettingsViewController.swift */; };
 		21283E4422D0972A0000ABE8 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E4322D0972A0000ABE8 /* Register.storyboard */; };
 		21283E4622D097580000ABE8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21283E4522D097580000ABE8 /* Login.storyboard */; };
-		21283E5222D099540000ABE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E5122D099540000ABE8 /* LoginViewController.swift */; };
-		21283E5422D099710000ABE8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21283E5322D099710000ABE8 /* RegisterViewController.swift */; };
 		500AD900CB81B992C1F907C9 /* Pods_tFuelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EE1EBD52A29F7A215FBE4E /* Pods_tFuelUITests.framework */; };
+		5A7EAF8522D9E331003C28F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAF8322D9E331003C28F1 /* RegisterViewController.swift */; };
+		5A7EAF8622D9E331003C28F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAF8422D9E331003C28F1 /* LoginViewController.swift */; };
+		5A7EAF8822D9E42A003C28F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7EAF8722D9E42A003C28F1 /* MapKit.framework */; };
 		AB7699EDEA570E92F00F8F9F /* Pods_tFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,11 +76,12 @@
 		21283E3D22D096140000ABE8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		21283E4322D0972A0000ABE8 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		21283E4522D097580000ABE8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		21283E5122D099540000ABE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/LoginViewController.swift; sourceTree = "<absolute>"; };
-		21283E5322D099710000ABE8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = /Users/riccardomores/Desktop/tFuelApp/tFuel/tFuel/RegisterViewController.swift; sourceTree = "<absolute>"; };
 		327B2DD4464731FBBD5042CC /* Pods-tFuel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuel.debug.xcconfig"; path = "Target Support Files/Pods-tFuel/Pods-tFuel.debug.xcconfig"; sourceTree = "<group>"; };
 		46B6D9F202BF1192DD66EC3A /* Pods-tFuelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelTests.debug.xcconfig"; path = "Target Support Files/Pods-tFuelTests/Pods-tFuelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5179C0FA67F0756667E7A8E4 /* Pods_tFuelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tFuelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7EAF8322D9E331003C28F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5A7EAF8422D9E331003C28F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5A7EAF8722D9E42A003C28F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		70DF8C4232A5BC838CF2C727 /* Pods-tFuelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelUITests.release.xcconfig"; path = "Target Support Files/Pods-tFuelUITests/Pods-tFuelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7819270E4CFEDB2C92BB4A7C /* Pods-tFuelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelUITests.debug.xcconfig"; path = "Target Support Files/Pods-tFuelUITests/Pods-tFuelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tFuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7EAF8822D9E42A003C28F1 /* MapKit.framework in Frameworks */,
 				AB7699EDEA570E92F00F8F9F /* Pods_tFuel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,8 +148,8 @@
 				21283E3D22D096140000ABE8 /* SettingsViewController.swift */,
 				21283E3B22D095D40000ABE8 /* SearchViewController.swift */,
 				21283DFC22CE3EF10000ABE8 /* SceneDelegate.swift */,
-				21283E5122D099540000ABE8 /* LoginViewController.swift */,
-				21283E5322D099710000ABE8 /* RegisterViewController.swift */,
+				5A7EAF8422D9E331003C28F1 /* LoginViewController.swift */,
+				5A7EAF8322D9E331003C28F1 /* RegisterViewController.swift */,
 				21283E3822CE9C230000ABE8 /* CalculateViewController.swift */,
 				21283E3622CE5BB60000ABE8 /* AlertStruct.swift */,
 				21283E3422CE56C50000ABE8 /* HomeController.swift */,
@@ -206,6 +209,7 @@
 		974CEA9CBBBF34079F842C2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A7EAF8722D9E42A003C28F1 /* MapKit.framework */,
 				8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */,
 				5179C0FA67F0756667E7A8E4 /* Pods_tFuelTests.framework */,
 				B0EE1EBD52A29F7A215FBE4E /* Pods_tFuelUITests.framework */,
@@ -440,12 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21283E5422D099710000ABE8 /* RegisterViewController.swift in Sources */,
+				5A7EAF8622D9E331003C28F1 /* LoginViewController.swift in Sources */,
 				21283E3522CE56C50000ABE8 /* HomeController.swift in Sources */,
 				21283E3C22D095D50000ABE8 /* SearchViewController.swift in Sources */,
 				21283E3E22D096140000ABE8 /* SettingsViewController.swift in Sources */,
+				5A7EAF8522D9E331003C28F1 /* RegisterViewController.swift in Sources */,
 				21283E3722CE5BB60000ABE8 /* AlertStruct.swift in Sources */,
-				21283E5222D099540000ABE8 /* LoginViewController.swift in Sources */,
 				21283DFB22CE3EF10000ABE8 /* AppDelegate.swift in Sources */,
 				21283DFD22CE3EF10000ABE8 /* SceneDelegate.swift in Sources */,
 				21283E3922CE9C230000ABE8 /* CalculateViewController.swift in Sources */,
@@ -623,7 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q84HB5733Y;
+				DEVELOPMENT_TEAM = QV5G362U53;
 				INFOPLIST_FILE = tFuel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -642,7 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q84HB5733Y;
+				DEVELOPMENT_TEAM = QV5G362U53;
 				INFOPLIST_FILE = tFuel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
