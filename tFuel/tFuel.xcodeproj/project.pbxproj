@@ -30,6 +30,7 @@
 		5A7EAF8522D9E331003C28F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAF8322D9E331003C28F1 /* RegisterViewController.swift */; };
 		5A7EAF8622D9E331003C28F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAF8422D9E331003C28F1 /* LoginViewController.swift */; };
 		5A7EAF8822D9E42A003C28F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7EAF8722D9E42A003C28F1 /* MapKit.framework */; };
+		5AB19E7122DB83B600D0EE08 /* MapPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB19E7022DB83B600D0EE08 /* MapPopUpView.swift */; };
 		AB7699EDEA570E92F00F8F9F /* Pods_tFuel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		5A7EAF8322D9E331003C28F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5A7EAF8422D9E331003C28F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5A7EAF8722D9E42A003C28F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5AB19E7022DB83B600D0EE08 /* MapPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopUpView.swift; sourceTree = "<group>"; };
 		70DF8C4232A5BC838CF2C727 /* Pods-tFuelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelUITests.release.xcconfig"; path = "Target Support Files/Pods-tFuelUITests/Pods-tFuelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7819270E4CFEDB2C92BB4A7C /* Pods-tFuelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tFuelUITests.debug.xcconfig"; path = "Target Support Files/Pods-tFuelUITests/Pods-tFuelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8ED07045968F83F09BCAA534 /* Pods_tFuel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tFuel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				21283E3822CE9C230000ABE8 /* CalculateViewController.swift */,
 				21283E3622CE5BB60000ABE8 /* AlertStruct.swift */,
 				21283E3422CE56C50000ABE8 /* HomeController.swift */,
+				5AB19E7022DB83B600D0EE08 /* MapPopUpView.swift */,
 				21283E0522CE3EF20000ABE8 /* Assets.xcassets */,
 				21283E0A22CE3EF20000ABE8 /* Info.plist */,
 			);
@@ -450,6 +453,7 @@
 				21283E3E22D096140000ABE8 /* SettingsViewController.swift in Sources */,
 				5A7EAF8522D9E331003C28F1 /* RegisterViewController.swift in Sources */,
 				21283E3722CE5BB60000ABE8 /* AlertStruct.swift in Sources */,
+				5AB19E7122DB83B600D0EE08 /* MapPopUpView.swift in Sources */,
 				21283DFB22CE3EF10000ABE8 /* AppDelegate.swift in Sources */,
 				21283DFD22CE3EF10000ABE8 /* SceneDelegate.swift in Sources */,
 				21283E3922CE9C230000ABE8 /* CalculateViewController.swift in Sources */,

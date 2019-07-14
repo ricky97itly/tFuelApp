@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import ContextMenu
 
 class HomeController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -119,6 +120,13 @@ extension HomeController: CLLocationManagerDelegate {
 }
 
 extension HomeController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation {
+            mapView.setCenter(annotation.coordinate, animated: true)
+            ContextMenu.shared.show(sourceViewController: self, viewController: MapPopUpView(stationTitle: annotation.title!!))
+        }
+    }
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let center = getCenterLocation(for: mapView)
