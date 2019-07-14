@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3X-Tq-KTM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3X-Tq-KTM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,26 +12,17 @@
             <objects>
                 <viewController id="E3X-Tq-KTM" customClass="HomeController" customModule="tFuel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWw-wP-iaj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFZ-Iz-Tmc">
-                                <rect key="frame" x="0.0" y="30" width="600" height="521"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <connections>
                                     <outlet property="delegate" destination="E3X-Tq-KTM" id="H2u-ij-bFF"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKb-z9-B1E">
-                                <rect key="frame" x="20" y="-11" width="560" height="40"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="GvX-TF-j1Y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-IN-s60">
-                                <rect key="frame" x="527.5" y="500" width="52" height="22.5"/>
+                                <rect key="frame" x="363.5" y="746.5" width="36" height="33.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="position"/>
                                 <connections>
@@ -40,20 +32,16 @@
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dKb-z9-B1E" firstAttribute="leading" secondItem="aWw-wP-iaj" secondAttribute="leadingMargin" id="00U-41-OVS"/>
+                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="top" secondItem="aWw-wP-iaj" secondAttribute="topMargin" constant="-44" id="05y-vk-SaG"/>
                             <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="leading" secondItem="RiN-vy-Z4V" secondAttribute="leading" id="cQJ-mn-EFd"/>
-                            <constraint firstItem="dKb-z9-B1E" firstAttribute="trailing" secondItem="aWw-wP-iaj" secondAttribute="trailingMargin" id="gYs-eD-ps2"/>
+                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="centerX" secondItem="aWw-wP-iaj" secondAttribute="centerX" id="nBt-fR-qY9"/>
                             <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="bottom" secondItem="RiN-vy-Z4V" secondAttribute="bottom" id="pfF-6q-cyJ"/>
-                            <constraint firstItem="dKb-z9-B1E" firstAttribute="top" secondItem="aWw-wP-iaj" secondAttribute="topMargin" constant="-11" id="qb3-SX-6wB"/>
-                            <constraint firstItem="dKb-z9-B1E" firstAttribute="centerX" secondItem="FFZ-Iz-Tmc" secondAttribute="centerX" id="rWn-Rs-Juh"/>
-                            <constraint firstItem="FFZ-Iz-Tmc" firstAttribute="top" secondItem="dKb-z9-B1E" secondAttribute="bottom" constant="1" id="xo9-rK-Dnc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RiN-vy-Z4V"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" largeContentSizeImage="home" id="X6t-RG-2l8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addressLabel" destination="dKb-z9-B1E" id="07B-Wh-cWM"/>
                         <outlet property="mapView" destination="FFZ-Iz-Tmc" id="p8l-mN-SSO"/>
                     </connections>
                 </viewController>

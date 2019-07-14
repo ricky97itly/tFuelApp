@@ -12,7 +12,6 @@ import CoreLocation
 
 class HomeController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var addressLabel: UILabel!
     let annotation = MKPointAnnotation()
     let locationManager = CLLocationManager()
 //    Initial zoom on user
@@ -143,15 +142,6 @@ extension HomeController: MKMapViewDelegate {
                 else {
                     Alert.showAlert(on: self, with: "Warning!", message: "Is not possible to see where the pointer is.")
                     return
-            }
-            
-//            First is for address, second for street number
-            let streetName = placemark.thoroughfare ?? ""
-            let streetNumber = placemark.subThoroughfare ?? ""
-            
-            DispatchQueue.main.async {
-                self.addressLabel.text = "\(streetName) \(streetNumber)"
-                
             }
         }
     }
