@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
-import ContextMenu
+import FittedSheets
 
 class HomeController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
@@ -124,7 +124,31 @@ extension HomeController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotation = view.annotation {
             mapView.setCenter(annotation.coordinate, animated: true)
-            ContextMenu.shared.show(sourceViewController: self, viewController: MapPopUpView(stationTitle: annotation.title!!))
+//            ContextMenu.shared.show(sourceViewController: self, viewController: MapPopUpView(stationTitle: annotation.title!!))
+            let controller = MapPopUpView(stationTitle: annotation.title!!)
+            let sheetController = SheetViewController(controller: controller)
+            
+            // Adjust how the bottom safe area is handled on iPhone X screens
+            sheetController.blurBottomSafeArea = true
+            sheetController.adjustForBottomSafeArea = false
+            
+            // Turn off rounded corners
+            sheetController.topCornersRadius = 0
+            
+            // Make corners more round
+            sheetController.topCornersRadius = 15
+            
+            // Disable the dismiss on background tap functionality
+            sheetController.dismissOnBackgroundTap = true
+            
+            // Extend the background behind the pull bar instead of having it transparent
+            sheetController.extendBackgroundBehindHandle = true
+            
+            sheetController.handleColor = UIColor(named: "accentcolor")!
+            sheetController.overlayColor = UIColor(named: "transparent")!
+            
+            // It is important to set animated to false or it behaves weird currently
+            self.present(sheetController, animated: false, completion: nil)
         }
     }
     
