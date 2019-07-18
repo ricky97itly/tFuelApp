@@ -192,31 +192,5 @@ extension HomeController: MKMapViewDelegate {
         
         return annotationView
     }
-    
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        let center = getCenterLocation(for: mapView)
-//        To convert lat and long
-        let geoCoder = CLGeocoder()
-        
-        guard let previousLocation = self.previousLocation else { return }
-        
-        guard center.distance(from: previousLocation) > 50 else { return }
-        self.previousLocation = center
-        
-        geoCoder.reverseGeocodeLocation(center) { [weak self] (placemarks, error) in
-            guard let self = self else { return }
-            
-            if let _ = error {
-                Alert.showAlert(on: self, with: "Warning!", message: "Is not possible to see where the pointer is.")
-                return
-            }
-            
-            guard let placemark = placemarks?.first
-                else {
-                    Alert.showAlert(on: self, with: "Warning!", message: "Is not possible to see where the pointer is.")
-                    return
-            }
-        }
-    }
 }
 
