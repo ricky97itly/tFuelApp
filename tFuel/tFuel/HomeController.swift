@@ -125,30 +125,42 @@ extension HomeController: MKMapViewDelegate {
         if let annotation = view.annotation {
             mapView.setCenter(annotation.coordinate, animated: true)
 //            ContextMenu.shared.show(sourceViewController: self, viewController: MapPopUpView(stationTitle: annotation.title!!))
-            let controller = MapPopUpView(stationTitle: annotation.title!!)
-            let sheetController = SheetViewController(controller: controller)
+            let geoCoder = CLGeocoder()
+            geoCoder.reverseGeocodeLocation(CLLocation(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)) { (placemarks, err) in
+                if let location = placemarks?.first {
+                    guard let streetAdress = location.name else { return }
+                    guard let country = location.isoCountryCode else { return }
+                    guard let state = location.locality else { return }
+                    let controller = MapPopUpView(stationTitle: annotation.title!!, stationAddress: "\(streetAdress), \(state), \(country)")
+                    let sheetController = SheetViewController(controller: controller, sizes: [
+                        SheetSize.fixed(420)])
+                    
+                    // Adjust how the bottom safe area is handled on iPhone X screens
+                    sheetController.blurBottomSafeArea = false
+                    sheetController.adjustForBottomSafeArea = false
+                    
+                    // Turn off rounded corners
+                    sheetController.topCornersRadius = 0
+                    
+                    // Make corners more round
+                    sheetController.topCornersRadius = 15
+                    
+                    // Disable the dismiss on background tap functionality
+                    sheetController.dismissOnBackgroundTap = true
+                    
+                    // Extend the background behind the pull bar instead of having it transparent
+                    sheetController.extendBackgroundBehindHandle = true
+                    
+                    sheetController.handleColor = UIColor(named: "accentcolor")!
+                    sheetController.overlayColor = UIColor(named: "transparent")!
+                    
+                    // It is important to set animated to false or it behaves weird currently
+                    self.present(sheetController, animated: false, completion: nil)
+                } else if let err = err {
+                    print(err)
+                }
+            }
             
-            // Adjust how the bottom safe area is handled on iPhone X screens
-            sheetController.blurBottomSafeArea = true
-            sheetController.adjustForBottomSafeArea = false
-            
-            // Turn off rounded corners
-            sheetController.topCornersRadius = 0
-            
-            // Make corners more round
-            sheetController.topCornersRadius = 15
-            
-            // Disable the dismiss on background tap functionality
-            sheetController.dismissOnBackgroundTap = true
-            
-            // Extend the background behind the pull bar instead of having it transparent
-            sheetController.extendBackgroundBehindHandle = true
-            
-            sheetController.handleColor = UIColor(named: "accentcolor")!
-            sheetController.overlayColor = UIColor(named: "transparent")!
-            
-            // It is important to set animated to false or it behaves weird currently
-            self.present(sheetController, animated: false, completion: nil)
         }
     }
     
